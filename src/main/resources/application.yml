@@ -1,0 +1,37 @@
+server:
+ port: 8081
+
+#spring:
+security:
+   oauth2:
+      client:
+#        registration:
+ #         facebook:
+  #          client-id: 2551172745121061
+   #         client-secret: a577ecb21cf4634f83623e40f773df2b
+        #clientId: 2551172745121061
+        clientId: c6472cf6da966e8fc085
+        #clientSecret: a577ecb21cf4634f83623e40f773df2b
+        clientSecret: cafb6016d2ee056e3303b93db4acf59a30bad4f2
+       # accessTokenUri: https://graph.facebook.com/oauth/access_token
+        accessTokenUri: https://github.com/login/oauth/access_token
+        #userAuthorizationUri: https://www.facebook.com/dialog/oauth
+        userAuthorizationUri: https://www.github.com/login/oauth/authorize
+        tokenName: oauth_token
+        authenticationScheme: query
+        clientAuthenticationScheme: form
+      resource:
+        #userInfoUri: https://graph.facebook.com/me
+        userInfoUri: https://api.github.com/user
+#        registration:
+#          facebook:
+#            client-id: 2551172745121061
+ #           client-secret: a577ecb21cf4634f83623e40f773df2b
+  #        github:
+ #           clientId: github-client-id
+  #          clientSecret: github-client-secret
+   #       google:
+  #          client-id: google-client-id
+   #         client-secret: google-client-secret
+#
+
